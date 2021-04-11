@@ -1,5 +1,7 @@
 # Single Page Application - IntelliSense.io
 
+![redux-2](https://user-images.githubusercontent.com/17890925/114315829-12dc3680-9ad7-11eb-9792-219d508ec57b.gif)
+
 ## Available Scripts
 
 In the project directory, you can run:
