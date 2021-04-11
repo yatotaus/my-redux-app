@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getData } from './redux/actions/data';
+import Home from './components/Home';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const dispatch = useDispatch();
+	const { data, error, loading, success } = useSelector(state => state.data);
+
+	useEffect(() => {
+		dispatch(getData());
+	}, []);
+
+	return (
+		<div className="App">
+			{success && <Home />}
+			{data.loading && <p>Loading...</p>}
+			{data.length === 0 && !loading && <p>No data available!</p>}
+			{error && !loading && <p>{error}</p>}
+		</div>
+	);
 }
 
 export default App;
