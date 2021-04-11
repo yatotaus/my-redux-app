@@ -33,7 +33,7 @@ const Home = () => {
 
 	return (
 		<>
-			<div className='card'>
+			<div className='card-container'>
 				<div className='card-body'>
 					<h3>TK1 Table</h3>
 					<Table
@@ -43,15 +43,15 @@ const Home = () => {
 				</div>
 			</div>
 			{chartMetric.length > 0 &&
-				<div className='card'>
+				<div className='card-container'>
 					<div className='card-body'>
 						<Chart list={chartMetric} />
 					</div>
 				</div>
 			}
 			{chartMetric.length === 0 &&
-				<h4 style={{marginLeft: '40px'}}>
-					Select one or more metrics from the table to display the line graph.
+				<h4>
+					✨ Select one or more metrics from the table to display the line graph.
 				</h4>
 			}
 		</>

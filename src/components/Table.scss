@@ -1,0 +1,39 @@
+$background: #efefef;
+$lfs-blue: #006ac6;
+$lfs-green: #74E04F;
+$lfs-grey: #F4F4F4;
+$lfs-black: #212529;
+
+.table-predictions {
+    width: 100%;
+    caption {
+        font-style: italic;
+        color: $lfs-green;
+        text-align: left;
+    }
+    thead {
+        border-top: 2px solid $lfs-green;
+        border-bottom: 2px solid $lfs-green;
+        tr {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+            color: $lfs-blue;
+            border: 1px solid #F1F1F1;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #F1F1F1;
+            color: $lfs-black;
+            &:hover {
+                cursor: pointer;
+                background-color: $lfs-grey;
+            }
+            td {
+                padding: 10px;
+                border: 1px solid $lfs-grey;
+            }
+        }
+    }
+}

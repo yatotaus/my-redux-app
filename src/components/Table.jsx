@@ -1,7 +1,8 @@
 import React from 'react';
+import './Table.scss'; 
 
 const Table = ({ dataTK1, setChartMetric }) => (
-    <table className="table table-hover">
+    <table className="table-predictions">
         <caption>List of TK1 current predictions</caption>
         <thead>
             <tr>

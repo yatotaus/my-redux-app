@@ -1,0 +1,15 @@
+$border-grey: #BDBDBD;
+
+.card-container {
+  margin: 2%;
+  border-radius: 20px;
+  border: 1px solid $border-grey;
+}
+
+.card-body {
+  margin: 20px;
+}
+
+h4 {
+  margin-left: 2%;
+}

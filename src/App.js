@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getData } from './redux/actions/data';
 import Home from './components/Home';
-import './App.css';
+import './App.scss';
 import Header from './components/Header';
 
 function App() {
