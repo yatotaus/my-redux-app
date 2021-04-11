@@ -8,18 +8,19 @@ $lfs-black: #212529;
     width: 100%;
     caption {
         font-style: italic;
-        color: $lfs-green;
+        color: $lfs-blue;
         text-align: left;
     }
     thead {
-        border-top: 2px solid $lfs-green;
         border-bottom: 2px solid $lfs-green;
         tr {
             text-transform: uppercase;
-            text-align: center;
-            padding: 10px;
+            text-align: left;
             color: $lfs-blue;
             border: 1px solid #F1F1F1;
+        }
+        th {
+            padding: 10px;
         }
     }
     tbody {

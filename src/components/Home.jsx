@@ -50,9 +50,9 @@ const Home = () => {
 				</div>
 			}
 			{chartMetric.length === 0 &&
-				<h4>
-					✨ Select one or more metrics from the table to display the line graph.
-				</h4>
+				<h6>
+					Select one or more metrics from the table to display the line graph.
+				</h6>
 			}
 		</>
 	)
