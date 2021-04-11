@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getData } from './redux/actions/data';
 import Home from './components/Home';
 import './App.css';
+import Header from './components/Header';
 
 function App() {
 	const dispatch = useDispatch();
@@ -13,12 +14,13 @@ function App() {
 	}, []);
 
 	return (
-		<div className="App">
+		<>
+			<Header />
 			{success && <Home />}
 			{data.loading && <p>Loading...</p>}
 			{data.length === 0 && !loading && <p>No data available!</p>}
 			{error && !loading && <p>{error}</p>}
-		</div>
+		</>
 	);
 }
 
