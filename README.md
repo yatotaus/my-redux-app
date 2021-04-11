@@ -1,4 +1,5 @@
 # Single Page Application - IntelliSense.io
+![redux-app](https://user-images.githubusercontent.com/17890925/114322681-e8e73c00-9af7-11eb-941d-83b7e6188c09.gif)
 
 
 ## Available Scripts
